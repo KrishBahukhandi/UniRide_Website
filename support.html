@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="UniRide Support Center with searchable FAQs, troubleshooting guides, safety escalation details, and contact support options."
+    />
+    <title>UniRide Support Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="support-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="UniRide home">
+          <span class="brand-mark" aria-hidden="true">U</span>
+          <span class="brand-text">
+            <strong>UniRide</strong>
+            <span>Campus ride sharing</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="index.html#about">About</a>
+          <a href="index.html#features">Features</a>
+          <a href="support.html" aria-current="page">Support</a>
+          <a href="index.html#privacy">Privacy Policy</a>
+          <a class="nav-cta" href="https://example.com/uniride-app" target="_blank" rel="noopener noreferrer">
+            Download App
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="support-hero">
+        <div class="container support-hero-grid">
+          <div class="support-hero-copy">
+            <div class="eyebrow">UniRide Support Center</div>
+            <h1>Find answers fast, fix common ride issues, and reach the right team.</h1>
+            <p class="hero-text">
+              Browse practical help for verification, ride requests, notifications,
+              chat, account settings, location, safety, and privacy. The goal is
+              to help users solve most problems without waiting for support.
+            </p>
+
+            <form class="support-search" id="support-search-form" role="search">
+              <label class="support-search-label" for="support-search">
+                Search help articles
+              </label>
+              <div class="support-search-row">
+                <input
+                  id="support-search"
+                  class="support-search-input"
+                  type="search"
+                  placeholder="Search topics like verification, ride request, notifications, location, delete account"
+                  aria-describedby="support-search-results"
+                />
+                <button class="button button-primary" type="submit">Search</button>
+              </div>
+              <p class="support-search-hint">
+                Try: “verification code”, “ride not showing”, “chat not working”, or “delete account”.
+              </p>
+              <p class="support-search-results" id="support-search-results" aria-live="polite">
+                Showing all help topics.
+              </p>
+            </form>
+          </div>
+
+          <aside class="support-hero-panel" aria-label="Suggested help actions">
+            <h2>Suggested Help</h2>
+            <div class="support-quick-grid">
+              <a class="support-quick-card" href="#category-account">
+                <strong>Account Help</strong>
+                <span>Login, verification, and profile access issues.</span>
+              </a>
+              <a class="support-quick-card" href="#category-rides">
+                <strong>Ride Help</strong>
+                <span>Creating rides, joining rides, approvals, and cancellations.</span>
+              </a>
+              <a class="support-quick-card" href="#category-notifications">
+                <strong>Notifications Help</strong>
+                <span>Fix alerts, status updates, and delayed request changes.</span>
+              </a>
+              <a class="support-quick-card" href="#category-safety">
+                <strong>Safety Help</strong>
+                <span>Reporting users, trust concerns, and urgent escalation steps.</span>
+              </a>
+              <a class="support-quick-card" href="#contact-support">
+                <strong>Contact Support</strong>
+                <span>Get in touch if self-service steps do not solve the issue.</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section support-overview">
+        <div class="container">
+          <div class="support-info-grid">
+            <article class="support-info-card">
+              <p class="section-label">Before contacting support</p>
+              <h2>Quick checklist</h2>
+              <ul class="support-checklist">
+                <li>Confirm you are using the latest version of the UniRide app.</li>
+                <li>Check that your internet connection is stable and try switching between Wi-Fi and mobile data.</li>
+                <li>Close and reopen the app if ride status, chat, or notifications seem stuck.</li>
+                <li>Review your spam folder if you are waiting for a verification code or email.</li>
+                <li>Make sure notification and location permissions are enabled if those features are not working.</li>
+                <li>Take screenshots of any error message before contacting support.</li>
+              </ul>
+            </article>
+
+            <article class="support-info-card">
+              <p class="section-label">Quick troubleshooting tips</p>
+              <h2>Try these first</h2>
+              <ul class="support-checklist">
+                <li>Pull to refresh ride lists if “My Rides” looks incomplete.</li>
+                <li>Reopen the ride details page if request or approval status looks delayed.</li>
+                <li>Check whether your profile is complete before offering a ride or adding a vehicle.</li>
+                <li>Confirm location access is set to “While Using the App” if ride matching feels inaccurate.</li>
+                <li>Restart the app if chat messages or ride updates do not load immediately.</li>
+                <li>For safety concerns, stop using the ride flow and contact support right away.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt support-categories">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Help categories</p>
+            <h2>Browse support by topic.</h2>
+            <p>
+              Each category includes practical answers designed around the real
+              UniRide experience, from verification and approvals to location,
+              safety, and privacy.
+            </p>
+          </div>
+
+          <div class="category-chip-grid" aria-label="Support categories">
+            <a class="category-chip" href="#category-getting-started">Getting Started</a>
+            <a class="category-chip" href="#category-account">Account and Login</a>
+            <a class="category-chip" href="#category-verification">Email Verification / OTP</a>
+            <a class="category-chip" href="#category-profile">Profile Setup</a>
+            <a class="category-chip" href="#category-offering">Offering a Ride</a>
+            <a class="category-chip" href="#category-joining">Joining / Requesting a Ride</a>
+            <a class="category-chip" href="#category-approvals">Ride Requests / Approvals</a>
+            <a class="category-chip" href="#category-my-rides">My Rides</a>
+            <a class="category-chip" href="#category-notifications">Notifications</a>
+            <a class="category-chip" href="#category-chat">Chat and Messaging</a>
+            <a class="category-chip" href="#category-payments">Payments / Fare Display</a>
+            <a class="category-chip" href="#category-vehicle">Vehicle Setup</a>
+            <a class="category-chip" href="#category-location">Location and Map Issues</a>
+            <a class="category-chip" href="#category-cancellations">Cancellations</a>
+            <a class="category-chip" href="#category-safety">Safety and Trust</a>
+            <a class="category-chip" href="#category-technical">Technical Problems</a>
+            <a class="category-chip" href="#category-privacy">Privacy and Data</a>
+            <a class="category-chip" href="#contact-support">Contact Support</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section support-faqs">
+        <div class="container">
+          <div class="faq-category-list" id="faq-category-list">
+            <section class="faq-category" id="category-getting-started" data-category="Getting Started">
+              <div class="faq-category-header">
+                <p class="section-label">1. Getting Started</p>
+                <h2>Starting with UniRide</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="getting started first time use how does uniride work create account university email">
+                <summary>How do I get started with UniRide?</summary>
+                <p>
+                  Download the app, create your account, verify your university email,
+                  complete your profile, and then choose whether you want to offer a
+                  ride or request one. If you cannot move past setup, make sure each
+                  required profile field is completed and your internet connection is stable.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="why can't i see anything after signing up onboarding setup incomplete">
+                <summary>Why does the app still look empty after I sign up?</summary>
+                <p>
+                  This usually means your profile is incomplete, verification is still
+                  pending, or there are no matching rides for your area yet. Check your
+                  verification status, finish any missing profile fields, and refresh the
+                  rides screen before trying again.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-account" data-category="Account and Login">
+              <div class="faq-category-header">
+                <p class="section-label">2. Account and Login</p>
+                <h2>Access and sign-in help</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="can't log in cannot login sign in issue password access account">
+                <summary>I can’t log in. What should I do?</summary>
+                <p>
+                  First, confirm you are using the same email you registered with and that
+                  your verification was completed. If login still fails, restart the app,
+                  try again on a stable connection, and request a new sign-in or verification
+                  flow if available. If the problem continues, contact support with the email
+                  address you are trying to use.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="logged out unexpectedly session expired">
+                <summary>Why was I logged out of my account?</summary>
+                <p>
+                  You may be logged out after an app update, session timeout, security event,
+                  or account change. Sign in again and make sure your app is updated. If you
+                  are repeatedly logged out, send support a screenshot and your device model.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-verification" data-category="Email Verification / OTP Problems">
+              <div class="faq-category-header">
+                <p class="section-label">3. Email Verification / OTP Problems</p>
+                <h2>Verification and code delivery</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="didn't receive verification code otp email not received">
+                <summary>I didn’t receive the verification code. What should I do?</summary>
+                <p>
+                  Check your spam or junk folder first and wait a few minutes before requesting
+                  a new code. Make sure you entered the correct email address and that your
+                  university mailbox is active. If repeated requests do not arrive, contact
+                  support and include your full email address and university domain.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="university email not accepted invalid campus email domain rejected">
+                <summary>My university email is not accepted. Why?</summary>
+                <p>
+                  UniRide may only allow approved university domains. Confirm that you entered
+                  your official campus email without typos and not a personal email address.
+                  If your school should be supported but is being rejected, contact support so
+                  the domain can be reviewed.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-profile" data-category="Profile Setup">
+              <div class="faq-category-header">
+                <p class="section-label">4. Profile Setup</p>
+                <h2>Profile completion and account details</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="why is my profile incomplete required fields">
+                <summary>Why is my profile marked incomplete?</summary>
+                <p>
+                  A profile is usually incomplete when required details such as name, university
+                  affiliation, contact information, or verification steps are missing. Open
+                  your profile settings and check for empty or flagged fields, then save your
+                  changes before retrying ride actions.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="can't update profile picture details settings save failed">
+                <summary>I updated my profile, but the changes did not save.</summary>
+                <p>
+                  Try again on a stable connection and stay on the settings screen until the
+                  save action completes. If your changes revert after reopening the app, take
+                  a screenshot of the issue and send support your device model and app version.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-offering" data-category="Offering a Ride">
+              <div class="faq-category-header">
+                <p class="section-label">5. Offering a Ride</p>
+                <h2>Creating and publishing rides</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="can't create a ride create ride button not working post trip">
+                <summary>I can’t create a ride. What should I check?</summary>
+                <p>
+                  Make sure your account is verified, your profile is complete, and any required
+                  vehicle details are added if you are driving. Also confirm that date, time,
+                  route, seat count, and any required trip information are filled in before posting.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="why is my ride not visible to others">
+                <summary>Why can’t other users see the ride I created?</summary>
+                <p>
+                  Your ride may still be syncing, filtered by route or timing, or blocked because
+                  required details were missing. Refresh the ride details page and confirm the ride
+                  appears under your upcoming rides. If it does not, edit and resave the trip.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-joining" data-category="Joining / Requesting a Ride">
+              <div class="faq-category-header">
+                <p class="section-label">6. Joining / Requesting a Ride</p>
+                <h2>Requesting seats and finding rides</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="can't request to join a ride request button disabled">
+                <summary>I can’t request to join a ride. Why?</summary>
+                <p>
+                  The ride may be full, already started, cancelled, outside your visible route,
+                  or limited by account requirements such as incomplete verification. Refresh the
+                  ride details screen and check whether the request button changes after profile
+                  completion or after reopening the app.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="why can't i see available rides no rides showing">
+                <summary>Why can’t I see available rides?</summary>
+                <p>
+                  This can happen if there are no active matching rides in your selected area,
+                  your location or filters are too narrow, or the app cannot access current route
+                  information. Review filters, enable location if needed, and refresh the rides list.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-approvals" data-category="Ride Requests / Approvals / Declines">
+              <div class="faq-category-header">
+                <p class="section-label">7. Ride Requests / Approvals / Declines</p>
+                <h2>Approvals, delays, and request states</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="driver did not approve my request pending too long">
+                <summary>The driver did not approve my request. What happens next?</summary>
+                <p>
+                  A pending request usually means the driver has not responded yet. Keep notifications
+                  enabled so you do not miss an approval or decline. If the ride time is getting close,
+                  consider looking for another ride instead of waiting for a response that may not come in time.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="accidentally declined request approval flow delayed">
+                <summary>I accidentally declined or the request/approval flow seems delayed. Can this be fixed?</summary>
+                <p>
+                  If a decline happened by mistake, the rider may need to submit a new request if the ride
+                  is still open. If the status feels delayed, refresh the ride details page, reopen the app,
+                  and check your connection. If the request state still looks wrong after a few minutes,
+                  contact support with the ride ID or screenshot.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-my-rides" data-category="My Rides">
+              <div class="faq-category-header">
+                <p class="section-label">8. My Rides</p>
+                <h2>Upcoming and past trip visibility</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="ride not showing in my rides missing trip history">
+                <summary>My ride is not showing in My Rides. What should I do?</summary>
+                <p>
+                  Pull to refresh first, then check whether the ride was cancelled, declined, or filtered
+                  under a different status. Upcoming and past rides may appear in separate tabs. If a ride
+                  you joined or created is still missing, contact support with the approximate time and route.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="past rides incorrect missing status history">
+                <summary>Why is my ride history incomplete?</summary>
+                <p>
+                  Ride history can look incomplete if older trips are still syncing or if a trip changed state
+                  close to departure time. Refresh the list and reopen the app. If a completed ride never appears,
+                  send support the ride details so the record can be reviewed.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-notifications" data-category="Notifications">
+              <div class="faq-category-header">
+                <p class="section-label">9. Notifications</p>
+                <h2>Alerts, updates, and request changes</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="notifications not appearing missing push alerts">
+                <summary>Notifications are not appearing. How can I fix that?</summary>
+                <p>
+                  Check your iPhone notification settings for UniRide and make sure alerts, sounds, and badges
+                  are enabled. Then reopen the app and confirm you are still signed in. If ride updates appear
+                  inside the app but not as notifications, try disabling and re-enabling notifications in iOS settings.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="can't see ride updates status updates delayed">
+                <summary>I can’t see ride updates or approval changes right away.</summary>
+                <p>
+                  This is often caused by a temporary sync delay or weak connection. Pull to refresh the ride details
+                  page, then reopen the app. If the status remains stuck while other users see a different state,
+                  contact support with screenshots from the affected ride.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-chat" data-category="Chat and Messaging">
+              <div class="faq-category-header">
+                <p class="section-label">10. Chat and Messaging</p>
+                <h2>Ride chat and message delivery</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="chat not working messages not sending">
+                <summary>Chat is not working. What should I do?</summary>
+                <p>
+                  Make sure you are opening the chat from an active ride and that your connection is stable.
+                  If messages fail to send, close and reopen the ride chat, then try again. If messages continue
+                  to stall, capture the ride screen and message state for support.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="why can't i message driver rider">
+                <summary>Why can’t I message the driver or rider?</summary>
+                <p>
+                  Chat may only be available after a request is approved or while a ride is active. If you are still
+                  in a pending or cancelled state, messaging may be disabled by design. Check the ride status first.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-payments" data-category="Payments / Fare display if applicable">
+              <div class="faq-category-header">
+                <p class="section-label">11. Payments / Fare Display</p>
+                <h2>Fare and pricing guidance</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="fare price not showing payment amount missing">
+                <summary>Why is the fare or price not showing for a ride?</summary>
+                <p>
+                  If UniRide displays fare information, it may depend on how the ride was created or whether pricing
+                  is enabled for that trip type. Refresh the ride details page and confirm the latest app version is installed.
+                  If pricing should appear but does not, contact support with a screenshot of the ride.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="payment support if applicable">
+                <summary>Does UniRide handle payments directly?</summary>
+                <p>
+                  If payments or fare display are supported in your version of UniRide, the app should show the relevant
+                  ride price or payment information in the trip details. If not, some communities may coordinate cost sharing
+                  separately. Replace this answer before launch if you introduce in-app payment features.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-vehicle" data-category="Vehicle Setup">
+              <div class="faq-category-header">
+                <p class="section-label">12. Vehicle Setup</p>
+                <h2>Driver vehicle details</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="how do i update vehicle details car info">
+                <summary>How do I update my vehicle details?</summary>
+                <p>
+                  Open your profile or driver settings and edit the saved vehicle information such as make, model, color,
+                  and any other required details. Save the changes before leaving the screen. If the update does not stick,
+                  try again on a stronger connection.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="vehicle setup required before offering ride">
+                <summary>Why am I being asked to add vehicle details before offering a ride?</summary>
+                <p>
+                  UniRide may require vehicle details so riders can recognize the car and feel more confident about the trip.
+                  If you plan to drive, make sure the required vehicle fields are completed before creating a ride.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-location" data-category="Location and Map Issues">
+              <div class="faq-category-header">
+                <p class="section-label">13. Location and Map Issues</p>
+                <h2>Route matching, pickup points, and maps</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="my location is wrong incorrect map pickup">
+                <summary>My location is wrong. How do I fix it?</summary>
+                <p>
+                  Check that location access is enabled for UniRide in iPhone settings and that you are using accurate
+                  device location services. Move to an open area if GPS accuracy is poor, then reopen the ride or map screen.
+                  If the wrong location still appears, manually review the pickup and drop-off points before confirming a ride.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="map route not loading location matching issues">
+                <summary>Why is the map or route not loading correctly?</summary>
+                <p>
+                  A weak connection or temporary map service issue can prevent route details from loading. Close the app,
+                  reopen it, and try again on a stable network. If the issue affects only one ride, capture the route screen
+                  and send it to support.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-cancellations" data-category="Cancellations">
+              <div class="faq-category-header">
+                <p class="section-label">14. Cancellations</p>
+                <h2>Cancelled rides and request changes</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="want to cancel booking request ride">
+                <summary>I want to cancel a booking or ride request. What should I do?</summary>
+                <p>
+                  Open the ride details screen and look for the cancel option attached to your current ride or request state.
+                  Cancel as early as possible so the other person has time to adjust. After cancellation, refresh My Rides to
+                  confirm the status changed successfully.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="what happens if driver cancels ride">
+                <summary>What happens if the driver cancels?</summary>
+                <p>
+                  The ride should update to a cancelled status and affected riders should no longer see it as active.
+                  Check notifications and My Rides for the latest status, then look for alternative rides if needed.
+                  If the cancellation did not update properly, contact support with the ride information.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-safety" data-category="Safety and Trust">
+              <div class="faq-category-header">
+                <p class="section-label">15. Safety and Trust</p>
+                <h2>Reporting and escalation</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="how do i report a user unsafe behavior">
+                <summary>How do I report a user?</summary>
+                <p>
+                  If the app includes an in-app report option, use it from the ride, profile, or chat screen whenever possible.
+                  For serious concerns, contact support immediately with the ride details, screenshots, and a short description
+                  of what happened so the issue can be reviewed quickly.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="safety concern urgent escalation trust">
+                <summary>What should I do if I have a safety concern?</summary>
+                <p>
+                  If there is an immediate emergency, contact local emergency services first. Then stop using the ride flow,
+                  save any screenshots or chat evidence, and email <a href="mailto:safety@uniride.app">safety@uniride.app</a>
+                  or <a href="mailto:support@uniride.app">support@uniride.app</a> with the subject line “Urgent Safety Issue.”
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-technical" data-category="Technical Problems / App Bugs">
+              <div class="faq-category-header">
+                <p class="section-label">16. Technical Problems / App Bugs</p>
+                <h2>Crashes, loading issues, and unexpected behavior</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="app stuck crashing not loading properly frozen">
+                <summary>The app is stuck, crashing, or not loading properly. What should I try?</summary>
+                <p>
+                  Force close the app and reopen it, then confirm you are using the latest version. If the problem continues,
+                  restart your phone and try again. When contacting support, include your iPhone model, iOS version, app version,
+                  and what screen you were on when the problem happened.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="buttons not working request approval flow broken">
+                <summary>Buttons or ride actions are not responding. Is that a known issue?</summary>
+                <p>
+                  This may happen during a sync delay or if the current ride state changed in the background. Refresh the page
+                  or reopen the app first. If the action remains blocked, capture a screenshot so support can check whether the
+                  issue is tied to a specific ride, account state, or app version.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="category-privacy" data-category="Privacy and Data">
+              <div class="faq-category-header">
+                <p class="section-label">17. Privacy and Data</p>
+                <h2>Account deletion and data questions</h2>
+              </div>
+              <details class="faq-item searchable-faq" data-search="want to delete my account remove data">
+                <summary>I want to delete my account. How do I request that?</summary>
+                <p>
+                  Email <a href="mailto:privacy@uniride.app">privacy@uniride.app</a> and include the account email address you use
+                  for UniRide. You may be asked to verify your identity before deletion is processed. Some data may be retained if
+                  required for legal, safety, or operational reasons.
+                </p>
+              </details>
+              <details class="faq-item searchable-faq" data-search="how is my data used privacy information">
+                <summary>How is my data used in UniRide?</summary>
+                <p>
+                  UniRide uses account, profile, ride, notification, chat, and location-related data to operate the app and support
+                  core ride-sharing features. You can read the full public privacy notice on the main website’s Privacy Policy section.
+                </p>
+              </details>
+            </section>
+
+            <section class="faq-category" id="contact-support" data-category="Contact Support">
+              <div class="faq-category-header">
+                <p class="section-label">18. Contact Support</p>
+                <h2>Still need help?</h2>
+              </div>
+
+              <div class="contact-support-grid">
+                <article class="support-info-card">
+                  <h3>Contact details</h3>
+                  <ul class="support-checklist">
+                    <li>General support: <a href="mailto:support@uniride.app">support@uniride.app</a></li>
+                    <li>Privacy requests: <a href="mailto:privacy@uniride.app">privacy@uniride.app</a></li>
+                    <li>Safety escalation: <a href="mailto:safety@uniride.app">safety@uniride.app</a></li>
+                    <li><strong>Replace before launch:</strong> Expected response time: within 24-48 business hours.</li>
+                  </ul>
+                </article>
+
+                <article class="support-info-card">
+                  <h3>What to include in your message</h3>
+                  <ul class="support-checklist">
+                    <li>Your UniRide account email address.</li>
+                    <li>A short description of the issue.</li>
+                    <li>Ride ID, route, or trip time if the issue is ride-specific.</li>
+                    <li>Screenshots or error messages if available.</li>
+                    <li>Your device model and iOS version for technical problems.</li>
+                  </ul>
+                </article>
+              </div>
+
+              <form class="support-form support-form-card" id="support-form">
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Your name" />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="you@university.edu" required />
+                </label>
+                <label>
+                  Topic
+                  <select name="topic" required>
+                    <option value="">Select a topic</option>
+                    <option value="Account or login issue">Account or login issue</option>
+                    <option value="Verification problem">Verification problem</option>
+                    <option value="Ride issue">Ride issue</option>
+                    <option value="Notification or chat issue">Notification or chat issue</option>
+                    <option value="Safety concern">Safety concern</option>
+                    <option value="Privacy request">Privacy request</option>
+                    <option value="Technical bug report">Technical bug report</option>
+                  </select>
+                </label>
+                <label class="support-form-full">
+                  Message
+                  <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Tell us what happened, what you expected, and which ride or screen was affected."
+                    required
+                  ></textarea>
+                </label>
+                <div class="support-form-actions support-form-full">
+                  <button class="button button-primary" type="submit">Email Support</button>
+                  <p class="support-form-note" id="support-form-note">
+                    This opens your email app with a prefilled message to <a href="mailto:support@uniride.app">support@uniride.app</a>.
+                  </p>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html" aria-label="UniRide home">
+            <span class="brand-mark" aria-hidden="true">U</span>
+            <span class="brand-text">
+              <strong>UniRide</strong>
+              <span>Campus ride sharing</span>
+            </span>
+          </a>
+          <p class="footer-copy">
+            Practical self-service help for UniRide users, plus direct support and safety escalation guidance.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="support.html">Support</a>
+          <a href="index.html#privacy">Privacy Policy</a>
+          <a href="mailto:support@uniride.app">support@uniride.app</a>
+          <a href="mailto:privacy@uniride.app">privacy@uniride.app</a>
+        </div>
+
+        <div class="footer-meta">
+          <p>Support response time placeholder: within 24-48 business hours</p>
+          <p><strong>Replace before launch:</strong> [Company / Entity Name], [Business Address]</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

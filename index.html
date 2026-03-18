@@ -46,6 +46,7 @@
           <a href="#features">Features</a>
           <a href="#how-it-works">How It Works</a>
           <a href="#who-its-for">Who It’s For</a>
+          <a href="support.html">Support</a>
           <a href="#privacy">Privacy Policy</a>
           <a class="nav-cta" href="https://example.com/uniride-app" target="_blank" rel="noopener noreferrer">
             Download App
@@ -319,6 +320,141 @@
         </div>
       </section>
 
+      <section class="section section-alt support-section" id="support">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Support</p>
+            <h2>Help users get answers quickly and reach the UniRide team when needed.</h2>
+            <p>
+              This support section gives visitors a clear way to get help with
+              accounts, rides, notifications, and privacy-related concerns.
+            </p>
+          </div>
+
+          <div class="support-grid">
+            <article class="support-card">
+              <h3>Contact support</h3>
+              <p>
+                For general help, account issues, ride coordination questions, or
+                bug reports, contact the UniRide support team.
+              </p>
+              <ul class="support-list">
+                <li>Email: <a href="mailto:support@uniride.app">support@uniride.app</a></li>
+                <li>Privacy: <a href="mailto:privacy@uniride.app">privacy@uniride.app</a></li>
+                <li><strong>Replace before launch:</strong> Add response hours or support SLA if you have one.</li>
+              </ul>
+            </article>
+
+            <article class="support-card">
+              <h3>Popular help topics</h3>
+              <p>
+                For a full searchable help center with detailed answers, open the
+                dedicated support page.
+              </p>
+              <ul class="support-list">
+                <li>University email verification and sign-in issues</li>
+                <li>Ride requests, approvals, and seat availability</li>
+                <li>Ride chat, status updates, and missed notifications</li>
+                <li>Profile, vehicle details, and account changes</li>
+                <li>Privacy, deletion requests, and data questions</li>
+              </ul>
+              <p class="support-card-action">
+                <a class="button button-secondary" href="support.html">Open Full Help Center</a>
+              </p>
+            </article>
+
+            <article class="support-card support-card-wide">
+              <h3>Contact form</h3>
+              <p>
+                This form opens the user’s email app with a prefilled support
+                message. It works on a static website without needing a backend.
+              </p>
+              <form class="support-form" id="support-form">
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Your name" />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="you@university.edu" required />
+                </label>
+                <label>
+                  Topic
+                  <select name="topic" required>
+                    <option value="">Select a topic</option>
+                    <option value="Account access">Account access</option>
+                    <option value="Ride issue">Ride issue</option>
+                    <option value="Notifications">Notifications</option>
+                    <option value="Profile or vehicle details">Profile or vehicle details</option>
+                    <option value="Privacy request">Privacy request</option>
+                    <option value="Bug report">Bug report</option>
+                  </select>
+                </label>
+                <label class="support-form-full">
+                  Message
+                  <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Describe your issue so the UniRide team can help."
+                    required
+                  ></textarea>
+                </label>
+                <div class="support-form-actions support-form-full">
+                  <button class="button button-primary" type="submit">Send support email</button>
+                  <p class="support-form-note" id="support-form-note">
+                    Messages are prepared for <a href="mailto:support@uniride.app">support@uniride.app</a>.
+                  </p>
+                </div>
+              </form>
+            </article>
+          </div>
+
+          <div class="faq-block">
+            <div class="section-heading">
+              <p class="section-label">FAQ</p>
+              <h2>Common support questions.</h2>
+            </div>
+
+            <div class="faq-list">
+              <details class="faq-item">
+                <summary>I can’t verify my university email. What should I do?</summary>
+                <p>
+                  Make sure you used your valid university email address and check
+                  your inbox or spam folder for the verification message. If the
+                  email still does not arrive, contact support with your university
+                  domain and the address you tried to use.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>How do ride approvals work?</summary>
+                <p>
+                  When a rider requests a seat, the driver can review the request
+                  and approve or decline it inside the app. Approved riders should
+                  receive updated ride details and relevant notifications.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>Why does UniRide request location access?</summary>
+                <p>
+                  Location may be used for ride matching, route display, pickup
+                  and drop-off coordination, and other trip-related features. If a
+                  user disables location permissions, some parts of the app may
+                  not work fully.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>How can I request account or data deletion?</summary>
+                <p>
+                  Users can contact <a href="mailto:privacy@uniride.app">privacy@uniride.app</a>
+                  to request access, correction, or deletion of their personal
+                  data, subject to applicable law and verification requirements.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section privacy-section" id="privacy">
         <div class="container">
           <div class="section-heading">
@@ -522,7 +658,9 @@
         <div class="footer-links">
           <a href="#about">About</a>
           <a href="#features">Features</a>
+          <a href="support.html">Support</a>
           <a href="#privacy">Privacy Policy</a>
+          <a href="mailto:support@uniride.app">support@uniride.app</a>
           <a href="mailto:privacy@uniride.app">privacy@uniride.app</a>
         </div>
 
